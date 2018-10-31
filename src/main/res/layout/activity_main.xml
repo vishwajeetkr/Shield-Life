@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shield Life"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:paddingBottom="10dp"
+        android:background="#b2dfdb"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:background="#b2dfdb">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter a location"
+            android:textAlignment="center"
+            android:id="@+id/location_input"
+            android:layout_weight="3"
+            android:textSize="20dp"
+            android:paddingTop="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=">"
+            android:textAlignment="center"
+            android:id="@+id/search_button"
+            android:layout_weight="1"
+            android:onClick="searchLocationMap"
+            android:textSize="20dp"
+            android:paddingTop="10dp"
+            android:background="#008b8b"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#b2dfdb">
+        <!--<Button-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="your location"-->
+            <!--android:id="@+id/location_button"-->
+            <!--android:onClick="currentLocationMap"-->
+            <!--android:textSize="30dp"-->
+            <!--android:padding="10dp"/>-->
+        <Button
+            android:id="@+id/location_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_bg_round"
+            android:onClick="currentLocationMap"
+            android:textColor="#ffffff"
+            android:text="get\n your location" />
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--tools:context=".MainActivity">-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Shield Life"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textSize="25dp" />-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/location_input"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="5"-->
+            <!--android:background="@color/colorPrimaryDark"-->
+            <!--android:padding="12dp"-->
+            <!--android:text="Enter a location"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textSize="30dp" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/search_button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:onClick="searchLocationMap"-->
+            <!--android:text=">"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textSize="30dp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical"-->
+        <!--tools:background="@color/colorPrimary">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/location_button"-->
+            <!--android:layout_width="138dp"-->
+            <!--android:layout_height="138dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="@drawable/button_bg_round"-->
+            <!--android:onClick="currentLocationMap"-->
+
+            <!--android:text="your location" />-->
+        <!--&lt;!&ndash;<Button&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/btn_scan_qr"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="220dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="220dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:background="?android:attr/colorPrimaryDark"&ndash;&gt;-->
+
+        <!--&lt;!&ndash;android:text="Your Location"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="15dp" />&ndash;&gt;-->
+
+
+    <!--</LinearLayout>-->
+
+<!--</LinearLayout>-->
+
+    <!--&lt;!&ndash;<?xml version="1.0" encoding="utf-8"?>&ndash;&gt;-->
+    <!--&lt;!&ndash;<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"&ndash;&gt;-->
+    <!--&lt;!&ndash;xmlns:app="http://schemas.android.com/apk/res-auto"&ndash;&gt;-->
+    <!--&lt;!&ndash;xmlns:tools="http://schemas.android.com/tools"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;app:layout_behavior="@string/appbar_scrolling_view_behavior"&ndash;&gt;-->
+    <!--&lt;!&ndash;tools:context=".MainActivity"&ndash;&gt;-->
+    <!--&lt;!&ndash;tools:showIn="@layout/activity_main">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Hello World!"&ndash;&gt;-->
+    <!--&lt;!&ndash;app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;app:layout_constraintHorizontal_bias="0.191"&ndash;&gt;-->
+    <!--&lt;!&ndash;app:layout_constraintLeft_toLeftOf="parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;app:layout_constraintRight_toRightOf="parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;app:layout_constraintVertical_bias="0.64" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;style="@android:style/Widget.Material.Light.Button.Small"&ndash;&gt;-->
+    <!--&lt;!&ndash;</android.support.constraint.ConstraintLayout>&ndash;&gt;-->
