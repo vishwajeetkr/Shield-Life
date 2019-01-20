@@ -13,3 +13,7 @@ This information then can be used to allocate resources to prepare for disaster 
 *  [Vishwajeet Kumar](https://github.com/vishwajeetkr)
 *  [Atul Kumar](https://github.com/atkatul)
 *  [Akash Meshram](https://github.com/akashmeshram)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details
