@@ -2,10 +2,9 @@
 An App to generate representations for a disaster-affected region.
 
 ## Built with
-```
-Android Studio
-Java
-```
+* [Android Studio](https://developer.android.com/studio/)
+* [Java](https://www.java.com/)
+
 
 ## Authors
 
